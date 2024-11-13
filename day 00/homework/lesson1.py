@@ -4,7 +4,7 @@ from turtle import *
 #we want to paint a house
 
 #step 1: draw a square
-speed(3)
+speed(5)
 width(5)
 color("purple")
 forward(200)
