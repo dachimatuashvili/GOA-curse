@@ -30,5 +30,5 @@ print(num1 / num2)
 
 someone_age = 76
 print(someone_age / 2)
-
+#someone_age ლუწია რადგან იყოფა 2-ზე
 

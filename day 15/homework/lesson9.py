@@ -1,12 +1,12 @@
-name="levani"
-name1="dachi"
+my_name="dachi"
+user_name = int(input("please enter your name: "))
 print(name<= name1)
 print("bye")
 
-num=4
-num1=4
-print(num<=num1)
-print("perfect")
+my_number=4
+user_number=int(input("please enter your favourite number: "))
+if my_number==user_number:
+    print("perfect")
 
 
 for i in range (0,150,2,):
@@ -17,11 +17,10 @@ for i in range (0,150,2,):
 
 name2="dato"
 name3="dachi"
-age=13
-age1=13
-print(name2<=name3)
-print(age<=age1)
-print("Notwins")
+my_age=13
+user_age=int(input("please enter your age: "))
+if my_age == user_age:
+    print("Notwins")
 
 
 
