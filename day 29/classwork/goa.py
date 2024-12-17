@@ -1,0 +1,1 @@
+print("no classwork, becouse leptop's charger got destroyed")
