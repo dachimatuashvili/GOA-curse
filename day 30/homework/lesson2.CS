@@ -15,7 +15,7 @@
 </body>
 </html>
 
-/* საერთო ღილაკის სტილი */
+
 .btn {
     padding: 10px 20px;
     font-size: 16px;
@@ -25,7 +25,7 @@
     transition: all 0.3s ease;
 }
 
-/* პირველი და მეორე ღილაკი (primary) */
+
 .primary {
     background-color: #4CAF50; /* მწვანე */
     color: white;
@@ -35,7 +35,7 @@
     background-color: #45a049; /* ღილაკი ჩრდილში წასვლისას */
 }
 
-/* მესამე ღილაკი (secondary) */
+
 .secondary {
     background-color: #008CBA; /* ლურჯი */
     color: white;
@@ -45,7 +45,7 @@
     background-color: #007bb5; /* ღილაკი ჩრდილში წასვლისას */
 }
 
-/* მეოთხე ღილაკი (danger) */
+
 .danger {
     background-color: #f44336; /* წითელი */
     color: white;
