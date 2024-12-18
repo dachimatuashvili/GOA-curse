@@ -1,109 +1,105 @@
-<!-- 
-Inline ელემენტები:
-Inline ელემენტები არის HTML-ის ისეთი ელემენტები, რომლებიც არ იწყებენ ახალ ხაზს და მხოლოდ იმდენ სივრცეს იკავებენ, რამდენიც შიგთავსს სჭირდება. 
-
-მაგალითი 1: <span> ელემენტი გამოიყენება ტექსტის კონკრეტული ნაწილის სტილიზაციისთვის.
--->
-<p>ეს არის <span style="color: red;">წითელი ტექსტი</span> პარაგრაფში.</p>
-
-<!-- 
-მაგალითი 2: <a> ელემენტი, რომელიც ბმულების შესაქმნელად გამოიყენება.
--->
-<p>ეწვიეთ ჩვენს <a href="https://example.com">ვებგვერდს</a> დამატებითი ინფორმაციისთვის.</p>
-
-<!-- 
-მაგალითი 3: <strong> ელემენტი, რომელიც ტექსტის მუქი სტილისთვის გამოიყენება.
--->
-<p>ეს არის <strong>მნიშვნელოვანი</strong> ტექსტი.</p>
-
-<!-- 
-Block Level ელემენტები:
-Block Level ელემენტები იწყებენ ახალ ხაზს და იკავებენ მთელ ხელმისაწვდომ სივრცეს (სიგანე), რაც იმას ნიშნავს, რომ სხვა ელემენტები ახალ ხაზზე გადაინაცვლებენ. 
-
-მაგალითი 1: <div> ელემენტი გამოიყენება კონტენტის კონტეინერად.
--->
-<div>
-    <p>ეს არის ბლოკ ელემენტის მაგალითი.</p>
-</div>
-
-<!-- 
-მაგალითი 2: <h1> ელემენტი სათაურების გამოსახატად გამოიყენება.
--->
-<h1>ეს არის სათაური</h1>
-
-<!-- 
-მაგალითი 3: <p> ელემენტი, რომელიც გამოიყენება ტექსტის პარაგრაფებად დასაწერად.
--->
-<p>ეს არის ტექსტის ჩვეულებრივი პარაგრაფი.</p>
 
 
-
-
-
-
-
-
-
-<!-- 
-Inline CSS:
-Inline CSS გამოიყენება კონკრეტულ HTML ელემენტზე სტილების განსასაზღვრად. 
-სტილი დამატებულია პირდაპირ ელემენტის "style" ატრიბუტში. 
-ეს მეთოდი კარგია მცირე ცვლილებებისთვის, მაგრამ არ არის რეკომენდირებული დიდ პროექტებში.
-
-მაგალითი:
--->
-<p style="color: blue; font-size: 16px;">ეს არის Inline CSS-ის მაგალითი.</p>
-
-<!-- 
-Internal CSS:
-Internal CSS განთავსებულია HTML დოკუმენტის `<head>` სექციაში `<style>` თეგის შიგნით. 
-ეს მეთოდი სასარგებლოა ერთგვერდიანი ვებსაიტებისთვის ან როდესაც კონკრეტული გვერდის სტილები გჭირდებათ.
-
-მაგალითი:
--->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ka">
 <head>
     <meta charset="UTF-8">
-    <title>Internal CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ჩემი საყვარელი საჭმელები</title>
     <style>
-        p {
-            color: green;
-            font-size: 18px;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #333;
+            margin-top: 20px;
+        }
+
+        .food-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .food-item {
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 250px;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+
+        .food-item img {
+            width: 100%;
+            height: 150px;
+            border-bottom: 2px solid black;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .food-item h2 {
+            color: #444;
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .food-item p {
+            color: #666;
+            font-size: 1em;
+            padding: 0 10px 10px 10px;
+        }
+
+        .food-item:hover {
+            transform: scale(1.05);
         }
     </style>
 </head>
 <body>
-    <p>ეს არის Internal CSS-ის მაგალითი.</p>
+    <h1>ჩემი საყვარელი საჭმელები</h1>
+    <div class="food-container">
+        <!-- ხინკალი -->
+        <div class="food-item">
+            <img src="https://kulinaria.ge/media/recipe-images/2017/04/xinkali.jpg" alt="ხინკალი">
+            <h2>ხინკალი</h2>
+            <p>ტრადიციული ქართული კერძი, ცომისგან გაკეთებული და ხორცით სავსე.</p>
+        </div>
+
+        <!-- ხაჭაპური -->
+        <div class="food-item">
+            <img src="https://i.ytimg.com/vi/x4yA_kRPSGo/maxresdefault.jpg" alt="ხაჭაპური">
+            <h2>ხაჭაპური</h2>
+            <p>ყველის ნაზავით მომზადებული ცომეული კერძი, რომელიც ყველგან უყვართ.</p>
+        </div>
+
+        <!-- ლობიანი -->
+        <div class="food-item">
+            <img src="https://foodhub.ge/wp-content/uploads/2022/08/%E1%83%9A%E1%83%9D%E1%83%91%E1%83%98%E1%83%90%E1%83%9C%E1%83%98-750x375.jpg" alt="ლობიანი">
+            <h2>ლობიანი</h2>
+            <p>ლობიოთი სავსე ცომეული, ძალიან გემრიელი და ნოყიერი.</p>
+        </div>
+
+        <!-- პიცა -->
+        <div class="food-item">
+            <img src="https://i.ytimg.com/vi/PgCVMixbYVg/maxresdefault.jpg" alt="პიცა">
+            <h2>პიცა</h2>
+            <p>იტალიური კერძი, რომელსაც ყველი, სოუსი და სხვა ინგრედიენტები ამშვენებს.</p>
+        </div>
+
+        <!-- მწვადი -->
+        <div class="food-item">
+            <img src="https://gastronomia.ge/wp-content/uploads/2020/06/00-1.jpg" alt="მწვადი">
+            <h2>მწვადი</h2>
+            <p>გადაწვული ხორცი, რომელსაც განსაკუთრებული არომატი აქვს.</p>
+        </div>
+    </div>
 </body>
 </html>
-
-<!-- 
-External CSS:
-External CSS მოიცავს ცალკე CSS ფაილს, რომელიც HTML დოკუმენტთან დაკავშირებულია `<link>` თეგის საშუალებით. 
-ეს საუკეთესო პრაქტიკაა, რადგან სტილები ცალკე ფაილში ინახება, რაც კოდის ორგანიზებას ამარტივებს.
-
-მაგალითი:
--->
-<!-- HTML ფაილში ვუკავშირებთ CSS ფაილს -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>External CSS</title>
-    <link rel="stylesheet" href="styles.css"> <!-- აქ დაკავშირებულია styles.css ფაილი -->
-</head>
-<body>
-    <p>ეს არის External CSS-ის მაგალითი.</p>
-</body>
-</html>
-
-<!-- 
-styles.css ფაილის შიგთავსი:
-p {
-    color: red;
-    font-size: 20px;
-}
--->
-
-
