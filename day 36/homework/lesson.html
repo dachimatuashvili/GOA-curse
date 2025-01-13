@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .box {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            transition: all 0.3s ease;
+        }
+
+        .box:nth-child(2) {
+            background-color: blue;
+        }
+
+        .box:hover {
+            width: 350px;
+            height: 350px;
+            background-color: yellow;
+        }
+
+        .link {
+            margin-top: 20px;
+            text-decoration: none;
+            color: blue;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        .link:visited {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <a class="link" href="https://www.facebook.com/fcbarcelona" target="_blank">Visit FC BARCELONA's Facebook Page</a>
+</body>
+</html>
