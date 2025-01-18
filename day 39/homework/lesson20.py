@@ -7,6 +7,7 @@ def litres(time):
 
 
 
+
 def open_or_senior(data):
     result = []
     for age, handicap in data:
