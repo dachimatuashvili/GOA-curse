@@ -1,0 +1,46 @@
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #141414;
+            font-family: Arial, sans-serif;
+        }
+        .card {
+            background: #1f1f1f;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+            width: 300px;
+        }
+        .profile-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        h2 {
+            margin: 10px 0 5px;
+        }
+        .location {
+            color: #b2ff00;
+            font-size: 14px;
+        }
+        .bio {
+            font-size: 12px;
+            margin: 10px 0;
+        }
+        .btn {
+            display: block;
+            background: #333;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 5px 0;
+        }
+        .btn:hover {
+            background: #555;
+        }
+   

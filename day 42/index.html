@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+import React from "react";
+
+const ProfileCard = () => {
+  return (
+    <div className="flex justify-center items-center min-h-screen bg-black">
+      <div className="bg-gray-900 text-white p-6 rounded-2xl shadow-lg w-80 text-center">
+        <img
+          className="w-20 h-20 mx-auto rounded-full border-2 border-gray-700"
+          src="https://via.placeholder.com/150"
+          alt="Profile"
+        />
+        <h2 className="text-xl font-semibold mt-4">Jessica Randall</h2>
+        <p className="text-green-400 text-sm">London, United Kingdom</p>
+        <p className="text-gray-400 mt-2 text-sm">
+          "Front-end developer and avid reader."
+        </p>
+        <div className="mt-4 space-y-2">
+          <button className="w-full bg-gray-800 py-2 rounded-lg hover:bg-gray-700">GitHub</button>
+          <button className="w-full bg-gray-800 py-2 rounded-lg hover:bg-gray-700">Frontend Mentor</button>
+          <button className="w-full bg-gray-800 py-2 rounded-lg hover:bg-gray-700">LinkedIn</button>
+          <button className="w-full bg-gray-800 py-2 rounded-lg hover:bg-gray-700">Twitter</button>
+          <button className="w-full bg-gray-800 py-2 rounded-lg hover:bg-gray-700">Instagram</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ProfileCard;
